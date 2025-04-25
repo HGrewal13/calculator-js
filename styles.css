@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputScreen {
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#summaryScreen {
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+}
+
+#numberScreen {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+    height: 40px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin: 10px 20px;
+    height: 80%;
+}
+
+.item {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+
+

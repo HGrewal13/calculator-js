@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #calculator {
@@ -16,12 +17,15 @@
     height: 500px;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 #inputScreen {
     height: 100px;
     padding: 10px;
     margin: 20px;
+    background-color: lightslategray;
+    border: 1px solid black;
 }
 
 #summaryScreen {

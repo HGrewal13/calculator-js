@@ -19,6 +19,10 @@ function divide(a, b) {
     return a/b;
 }
 
+function modular(a, b) {
+    return a % b;
+}
+
 function operate(operator, a, b) {
     switch(operator) {
         case "+":
@@ -29,6 +33,8 @@ function operate(operator, a, b) {
             return multiply(a, b);
         case "/":
             return divide(a, b);
+        case "%":
+            return modular(a, b);
     }
 }
 
@@ -62,12 +68,30 @@ gridContainer.addEventListener("click", function(event) {
     currentText.textContent = currentEntry;
 
     if(clicked.classList.contains("operator")) {
-        if (currentEntry !== "") {
-            num1 = parseInt(currentEntry);
-            operator = value;
-            currentEntry = "";
-            currentText.textContent = "";
-            summaryScreen.textContent = `${num1} ${operator}`;
+        // if (currentEntry !== "") {
+        //     num1 = parseInt(currentEntry);
+        //     operator = value;
+        //     currentEntry = "";
+        //     currentText.textContent = "";
+        //     summaryScreen.textContent = `${num1} ${operator}`;
+        // }
+        if(num1 == null) {
+            if (currentEntry !== "") {
+                num1 = parseInt(currentEntry);
+                operator = value;
+                currentEntry = "";
+                currentText.textContent = "";
+                summaryScreen.textContent = `${num1} ${operator}`;
+            }
+        } else if(num1 !== null) {
+            if (currentEntry !== "") {
+                let result = operate(operator, num1, parseInt(currentEntry));
+                operator = value;
+                currentEntry = "";
+                currentText.textContent = "";
+                num1 = result;
+                summaryScreen.textContent = `${num1} ${operator}`;
+            }
         }
     }
 
@@ -78,7 +102,7 @@ gridContainer.addEventListener("click", function(event) {
             summaryScreen.textContent = `${num1} ${operator} ${num2}`;
             let result = operate(operator, num1, num2);
             currentText.textContent = result;
-            // Allows chaining operations each time we press equal.
+            // Allows chaining operations each time we press equals.
             currentEntry = result;
         }
     }

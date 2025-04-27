@@ -10,7 +10,8 @@ This project is part of my learning journey through [The Odin Project](https://w
 - Perform basic arithmetic operations: **add**, **subtract**, **multiply**, **divide**, and **modulus**.
 - Handle **decimal numbers** with ease.
 - Round results to **5 decimal places** for cleaner outputs.
-- 🖥Display a **summary of operations** (e.g., `5 + 3`) before showing the result.
+- Allows for chaining operations
+- Display a **summary of operations** (e.g., `5 + 3`) before showing the result.
 - Handle basic **errors** (e.g., division by zero returns **"ERROR"**).
 - **Clear current entry** or **reset** the entire calculator at any time.
 

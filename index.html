@@ -7,22 +7,30 @@
     <title>Calculator</title>
 </head>
 <body>
-    <header>Calculator</header>
-
     <div id="container">
         <main>
             <div id="calculator">
-                <div id="inputScreen">
+                <!-- <div id="inputScreen">
                     <div id="summaryScreen">
                         <p id="summaryText"></p>
                     </div>
                     <div id="numberScreen">
                         <p id="currentText"></p>
                     </div>
-                </div>
+                </div> -->
                     <div id="grid-container">
-                        <button class="item clearEntry" value="AC">AC</button>
-                        <button class="item clearAll" value="C">C</button>
+                        <div id="screenContainer" class="item fullSpan">
+                            <div id="inputScreen">
+                                <div id="summaryScreen">
+                                    <p id="summaryText"></p>
+                                </div>
+                                <div id="numberScreen">
+                                    <p id="currentText"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="item clearEntry" value="C">C</button>
+                        <button class="item clearAll" value="AC">AC</button>
                         <button class="item operator" value="%">%</button>
                         <button class="item operator" value="/">/</button>
                         <button class="item number" value="7">7</button>
@@ -39,7 +47,7 @@
                         <button class="item operator" value="*">x</button>
                         <button class="item number" value="0">0</button>
                         <button class="item decimal" value=".">.</button>
-                        <button class="item wide equals" value="=">=</button>
+                        <button class="item span2 equals" value="=">=</button>
                     </div>
                 </div>
             </div>

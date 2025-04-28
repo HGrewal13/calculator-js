@@ -1,7 +1,7 @@
 # 🧮 Calculator
 
 A simple, functional calculator built with **vanilla JavaScript**, **HTML**, and **CSS**.  
-This project is part of my learning journey through <a href = "https://www.theodinproject.com/" target="_blank">The Odin Project</a>.
+This project is part of my learning journey through <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>.
 
 ---
 
@@ -28,7 +28,8 @@ This project is part of my learning journey through <a href = "https://www.theod
 ## 🚀 View Live
 
 You can see the live version of this project here:  
-👉 <a href="https://hgrewal13.github.io/calculator-js/" target="_blank">Calculator App</a>
+👉 <a href="https://hgrewal13.github.io/calculator-js/" target="_blank">Calculator App</a>.
+
 
 ---
 

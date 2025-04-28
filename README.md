@@ -25,9 +25,10 @@ This project is part of my learning journey through [The Odin Project](https://w
 
 ---
 
-## 📸 Screenshots
+## 🚀 View Live
 
-Coming Soon
+You can see the live version of this project here:  
+👉 [View Calculator App](https://hgrewal13.github.io/calculator-js/)
 
 ---
 
